@@ -1,0 +1,192 @@
+# feiwufu.github.io
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta 
+    <title>天翔❤小萌</title>
+    <script>
+       function showTime() {
+           var dateMeet = new Date('2022/03/08 13:36:00');
+            var dateNow = new Date();
+           var nd = 1000 * 24 * 60 * 60;
+        var nh = 1000 * 60 * 60;
+        var nm = 1000 * 60;
+        var ns = 1000;
+        var diff = Math.abs(parseInt(dateNow - dateMeet));
+        // 计算差多少天
+        var day = parseInt(diff / nd);
+        // 计算差多少小时
+        var hour = parseInt(diff % nd / nh);
+        // 计算差多少分钟
+        var min = parseInt(diff % nd % nh / nm);
+        // 计算差多少秒//输出结果
+        var sec = parseInt(diff % nd % nh % nm / ns);
+
+            // 实时显示
+            var element = document.getElementById('timeMeet');
+            element.innerHTML = "我们相遇了 " + day + " 天 " + hour + " 小时 " + min + " 分钟 " + sec + " 秒" ;
+        }
+        setInterval('showTime()', 1000);
+    </script>
+    <style>
+        body{
+            background-color: pink;
+        }
+        .loveTitle{
+            color: crimson;
+            text-align: center;
+        }
+        .timeTogether{
+            color: crimson;
+            text-align: center;
+            font-size: 30px;
+            font-style: initial;
+            font-weight: 200;
+            margin-top: 100px;
+        }
+        #mmPig{
+            margin-top: 50px;
+            float: left;
+
+        }
+        #txPig{
+            margin-top: 50px;
+            float: right;
+        }
+        .div1{
+        text-align: center;
+        font-size: 20px;
+    } 
+       
+        .pg1{
+            text-align: center;
+        font-size: 18px;
+         width:300px;
+        }
+    
+
+    </style>
+    <style type="text/css">
+        #MyCanvas {
+            border: 1px solid lightblue;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function() {
+            var ctx = document.getElementById("Mylove").getContext("2d");
+            ctx.width = document.documentElement.clientWidth-20;
+            ctx.height = document.documentElement.clientHeight-20;
+            var r = 4;
+
+            function drawHeart() {
+                var num = 40; //分割为360个点绘制
+                var redian;
+                var startRedian = Math.PI;
+                var redianDecrement;
+                var i = 0;
+                var time = 150;
+                ctx.strokeStyle = "red";
+                ctx.lineWidth = 2;
+                redian = startRedian;
+                redianDecrement = 2 * Math.PI / num;
+                ctx.moveTo(getX(redian), getY(redian));
+                var intervalId = setInterval(function(){
+                    redian += redianDecrement;
+                    ctx.lineTo(getX(redian), getY(redian));
+                    i++;
+                    ctx.stroke();
+                    if (i >= num) {
+                        clearInterval(intervalId);
+                    }
+                }, time);
+                ctx.font = "30px 宋体";
+                 ctx.strokeText("天翔", 120, 222);
+                ctx.strokeText("萌萌", 600, 222);
+            }
+        
+            function getX(t) {
+                return 400 + r * (16 * Math.pow(Math.sin(t), 3));
+            }
+            
+            function getY(t) {
+                return 200 - r * (13 * Math.cos(t) - 5 * Math.cos(2 * t) - 2 * Math.cos(3 * t) - Math.cos(4 * t));
+            }
+            drawHeart();
+        }
+        
+    </script>
+
+</head>
+<body background="pink">
+    <h1 class="loveTitle">天翔和萌萌的小窝</h1>
+    <h2 class="loveTitle">天翔和萌萌永远在一起</h12>
+
+
+    <div class=" timeTogether" id="timeMeet"></div>
+     <img id = "mmPig"src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-b76fa95e-eee3-4817-9952-364e2f7e14dc/a444e720-9bda-45c8-885e-5f79c69848a1.jpg" width="300px" alt="萌萌的小猪天翔" >
+    <canvas id="Mylove" width="800" height="521"></canvas>
+     <img id = "txPig"src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-b76fa95e-eee3-4817-9952-364e2f7e14dc/e99480a6-628d-4bf6-82af-9f38ae878c04.jpg" width="300px" alt="天翔的小猪萌萌"> 
+        <video width="400px" src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-b76fa95e-eee3-4817-9952-364e2f7e14dc/2b4bd389-a480-4acf-a778-254774cca29c.mp4 " controls="controls">
+            萌萌
+        </video>
+
+
+            <div class="div1" >
+
+                <!-- <p class="pg1"> -->
+            真的好喜欢你啊<br><br>
+            像从有风的深秋晚上走到暖哄哄的房间里那么喜欢你<br><br>
+            你是软绵绵又大大的被窝<br><br>
+            你是安静的夜晚和不打烊的便利店<br><br>
+            希望你可以陪我久一点啊<br><br>
+            ———萌萌<br>
+            <br>
+        <br>
+        露水伴着花香就是你的模样<br>
+        星星陪着月亮像你在我身旁<br>
+        天总会下雨人也难免会伤心<br>
+        许下誓言的爱情吹散了乌云<br>
+        命中的注定才能遇到对的你<br>
+        在我的心里存有满满的爱意<br>
+        <br>
+        第一次的相遇让我找到你<br>
+        忘记所有过去只求和你在一起<br>
+        相互的陪伴，心中的温暖<br>
+        彼此的相爱，幸福的港湾<br>
+        那个满眼都是我的女孩<br>
+        你是否会为我守候 永远<br>
+        <br>
+        空间的阻碍<br>
+        你用时间去等待<br>
+        爱情的引力<br>
+        我们深深的吸引<br>
+        <br>
+        想创造你和我两个人的世界<br>
+        我搂着你，伴着晨曦的光翩翩起舞<br>
+        你握住我，指尖弹奏出永恒的音符<br>
+        那一刻时间为你静止<br>
+        <br>
+        想要和你来到宇宙的边境<br>
+        紧紧相拥直到时间尽头<br>
+        我们的爱跨越空间，超越时间<br>
+        <br>
+        花飞雨追，风去云随<br>
+        而我的萌永远在天的怀中<br>
+        等海枯石烂，等风停云隐<br>
+        天还在萌未变<br>
+        <br>
+        永永远远不被打扰<br>
+        生生世世永不分离<br>
+        <br>
+        ———永远爱你的天翔<br>
+            </div>
+    
+      
+        
+        
+</body>
+</html>
